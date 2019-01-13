@@ -57,6 +57,7 @@ gulp.task('watch', function(){
       //this will run silently in the background, waiting for us to make some saved changes. It won't end until we tell it to end, usually with a control-C
 
    watch('./app/assets/styles/**/*.css', function() {
+      //watch for any folder inside 'styles' folder and any .css file inside that folder
       gulp.start('styles');
    });
 });
